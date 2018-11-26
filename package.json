@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "husky": "^1.2.0",
+    "lerna": "^3.4.3"
+  },
+  "main": "index.js",
+  "author": "Charles Hufnagel <charles.hufnagel@pm.me>",
+  "license": "ISC"
+}
