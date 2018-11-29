@@ -1,26 +1,254 @@
 [
   {
-    "questionId": "1",
-    "questionText": "Atqui iriure id mea, at his fastidii gloriatur?",
-    "A": "Brute definiebas ne sea, dolorem interesset nam cu.",
-    "B": "No vim ridens sanctus antiopam, est no velit tractatos salutatus.",
-    "C": "No nec nulla diceret splendide, ne cum primis elaboraret.",
-    "D": "Vel ancillae reformidans te, utinam torquatos cum an."
+    "id": 1,
+    "text": "Navita (line 2) refers to",
+    "answers": [{
+        "choice": "A",
+        "content": "Evander"
+      },
+      {
+        "choice": "B",
+        "content": "Latinus"
+      },
+      {
+        "choice": "C",
+        "content": "Priam"
+      },
+      {
+        "choice": "D",
+        "content": "Juturna"
+      }
+    ]
   },
   {
-    "questionId": "2",
-    "questionText": "Atqui iriure id mea, at his fastidii gloriatur?",
-    "A": "Brute definiebas ne sea, dolorem interesset nam cu.",
-    "B": "No vim ridens sanctus antiopam, est no velit tractatos salutatus.",
-    "C": "No nec nulla diceret splendide, ne cum primis elaboraret.",
-    "D": "Vel ancillae reformidans te, utinam torquatos cum an."
+    "id": 2,
+    "text": "In line 2, what kind of clause is introduced by ut?",
+    "answers": [{
+        "choice": "A",
+        "content": "A purpose clause"
+      },
+      {
+        "choice": "B",
+        "content": "A temporal clause"
+      },
+      {
+        "choice": "C",
+        "content": "A result clause"
+      },
+      {
+        "choice": "D",
+        "content": "An indirect command"
+      }
+    ]
   },
   {
-    "questionId": "3",
-    "questionText": "Atqui iriure id mea, at his fastidii gloriatur?",
-    "A": "Brute definiebas ne sea, dolorem interesset nam cu.",
-    "B": "No vim ridens sanctus antiopam, est no velit tractatos salutatus.",
-    "C": "No nec nulla diceret splendide, ne cum primis elaboraret.",
-    "D": "Vel ancillae reformidans te, utinam torquatos cum an."
+    "id": 3,
+    "text": "In lines 2-3 (Navita . . . ripae), we learn that the",
+    "answers": [{
+        "choice": "A",
+        "content": "travelers approach the shore through a grove"
+      },
+      {
+        "choice": "B",
+        "content": "boat was shipwrecked by a huge wave"
+      },
+      {
+        "choice": "C",
+        "content": "ferryman looks at the travelers and falls silent"
+      },
+      {
+        "choice": "D",
+        "content": "Stygian wave washes up on Aeneas’ foot"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "The subject of adgreditur and increpat (line 4) is?",
+    "answers": [{
+        "choice": "A",
+        "content": "Navita (line 2)"
+      },
+      {
+        "choice": "B",
+        "content": "Stygia (line 2)"
+      },
+      {
+        "choice": "C",
+        "content": "nemus (line 3)"
+      },
+      {
+        "choice": "D",
+        "content": "Aeneas (understood)"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "In line 5, qui refers to",
+    "answers": [{
+        "choice": "A",
+        "content": "Aeneas"
+      },
+      {
+        "choice": "B",
+        "content": "Styx"
+      },
+      {
+        "choice": "C",
+        "content": "the grove"
+      },
+      {
+        "choice": "D",
+        "content": "the journey"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "With the words comprime gressum (line 6), the speaker urges someone to",
+    "answers": [{
+        "choice": "A",
+        "content": "back up"
+      },
+      {
+        "choice": "B",
+        "content": "turn around"
+      },
+      {
+        "choice": "C",
+        "content": "stop"
+      },
+      {
+        "choice": "D",
+        "content": "proceed"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "The metrical pattern of the first four feet of line 7 (Umbrarum . . . soporae) is",
+    "answers": [{
+        "choice": "A",
+        "content": "spondee-dactyl-spondee-spondee"
+      },
+      {
+        "choice": "B",
+        "content": "dactyl-dactyl-spondee-spondee"
+      },
+      {
+        "choice": "C",
+        "content": "dactyl-spondee-spondee-spondee"
+      },
+      {
+        "choice": "D",
+        "content": "spondee-dactyl-dactyl-spondee"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "Line 8 (corpora . . . carina) is translated",
+    "answers": [{
+        "choice": "A",
+        "content": "bodies of the wicked travel swiftly on the Stygian boat"
+      },
+      {
+        "choice": "B",
+        "content": "the lively boat carries bodies of the wicked across the Styx"
+      },
+      {
+        "choice": "C",
+        "content": "it is forbidden for living bodies to be transported by the Stygian boat"
+      },
+      {
+        "choice": "D",
+        "content": "it is forbidden to carry living bodies in the Stygian boat"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "The name Alciden (line 9) refers to Hercules, who is described elsewhere in the Aeneid as visiting the home of",
+    "answers": [{
+        "choice": "A",
+        "content": "Evander"
+      },
+      {
+        "choice": "B",
+        "content": "Latinus"
+      },
+      {
+        "choice": "C",
+        "content": "Priam"
+      },
+      {
+        "choice": "D",
+        "content": "Juturna"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "Theseus and Pirithous are mentioned in line 10 (accepisse . . . Pirithoumque) because they",
+    "answers": [{
+        "choice": "A",
+        "content": "were great friends"
+      },
+      {
+        "choice": "B",
+        "content": "founded cities"
+      },
+      {
+        "choice": "C",
+        "content": "tried to kidnap Proserpina"
+      },
+      {
+        "choice": "D",
+        "content": "sought advice from Tiresias"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "A stylistic device used in line 11 (dis . . . essent) is",
+    "answers": [{
+        "choice": "A",
+        "content": "chiasmus"
+      },
+      {
+        "choice": "B",
+        "content": "metonymy"
+      },
+      {
+        "choice": "C",
+        "content": "tmesis"
+      },
+      {
+        "choice": "D",
+        "content": "metaphor"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "The epic characteristic illustrated in the passage is",
+    "answers": [{
+        "choice": "A",
+        "content": "invocation of the Muse"
+      },
+      {
+        "choice": "B",
+        "content": "descent into the underworld"
+      },
+      {
+        "choice": "C",
+        "content": "hospitality shown to a guest"
+      },
+      {
+        "choice": "D",
+        "content": "intervention of the gods"
+      }
+    ]
   }
 ]
