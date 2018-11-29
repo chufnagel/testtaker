@@ -1,8 +1,10 @@
 import Layout from "../components/Layout";
+import Passage from "../components/Passage";
+import passage from "../static/passage.json";
 
 const Index = () => (
   <Layout>
-    <p>Hello!</p>
+    <Passage passage={passage} />
   </Layout>
 );
 

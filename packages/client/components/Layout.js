@@ -1,7 +1,9 @@
+import Meta from "./Meta";
 import Header from "./Header";
 
 const Layout = props => (
   <div>
+    <Meta />
     <style jsx global>{`
       body {
         background: DarkBlue;
