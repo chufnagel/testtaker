@@ -31,11 +31,46 @@ const Layout = props => (
         font-size: 1.5em;
         border-width: 0.2em;
       }
+      .timer {
+        display: flex;
+        flex-flow: row reverse;
+        margin-left: auto;
+        justify-content: flex-end;
+        font-weight: bold;
+        font-size: large;
+        text-align: right;
+        border: 2px solid black;
+        border-style: double;
+      }
       .nav {
       }
-      .button {
-        display: inline-block;
-        font-size: 20px;
+      .cards {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background: grey;
+        border: 2px solid black;
+        box-sizing: border-box;
+        border-radius: 6px;
+        box-padding: 1.25rem;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        height: 100%;
+      }
+      .radio-row {
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+      }
+      .question {
+      }
+      radio {
       }
     `}</style>
     <Header />
@@ -44,3 +79,18 @@ const Layout = props => (
 );
 
 export default Layout;
+
+// flex: 1 0 21%;
+// .cards {
+//   position: relative;
+//   display: flex;
+//   flex-flow: row wrap;
+//   justify-content: space-between;
+// }
+// .card {
+//   box-sizing: border-box;
+//   padding: 20px;
+//   flex: 1;
+//   margin: 5px;
+//   height: 100px;
+// }

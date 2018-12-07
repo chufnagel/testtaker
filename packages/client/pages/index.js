@@ -1,10 +1,12 @@
 import Layout from "../components/Layout";
-import Passage from "../components/Passage";
+import Quiz from "../components/Quiz";
+
 import passage from "../static/passage.json";
+import questions from "../static/questions.json";
 
 const Index = () => (
   <Layout>
-    <Passage passage={passage} />
+    <Quiz passage={passage} questions={questions} />
   </Layout>
 );
 

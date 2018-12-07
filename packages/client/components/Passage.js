@@ -11,7 +11,20 @@ const Passage = ({ passage }) => (
 );
 
 Passage.propTypes = {
-  passage: PropTypes.array.isRequired,
+  passage: PropTypes.array,
+};
+
+Passage.defaultProps = {
+  passage: [
+    {
+      line: "1",
+      text: "Ergo iter inceptum peragunt fluvioque propinquant.",
+    },
+    {
+      line: "2",
+      text: "Navita quos iam inde ut Stygia prospexit ab unda",
+    },
+  ],
 };
 
 export default Passage;

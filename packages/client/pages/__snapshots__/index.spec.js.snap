@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Index matches snapshot 1`] = `
+<Layout>
+  <Passage
+    passage={
+      Array [
+        Object {
+          "line": "1",
+          "text": "Ergo iter inceptum peragunt fluvioque propinquant.",
+        },
+        Object {
+          "line": "2",
+          "text": "Navita quos iam inde ut Stygia prospexit ab unda",
+        },
+        Object {
+          "line": "3",
+          "text": "per tacitum nemus ire pedemque advertere ripae,",
+        },
+        Object {
+          "line": "4",
+          "text": "Line sic prior adgreditur dictis atque increpat ultro:",
+        },
+        Object {
+          "line": "5",
+          "text": "“Quisquis es, armatus qui nostra ad flumina tendis,",
+        },
+        Object {
+          "line": "6",
+          "text": "fare age, quid venias, iam istinc et comprime gressum.",
+        },
+        Object {
+          "line": "7",
+          "text": "Umbrarum hic locus est, somni noctisque soporae:",
+        },
+        Object {
+          "line": "8",
+          "text": "corpora viva nefas Stygia vectare carina.",
+        },
+        Object {
+          "line": "9",
+          "text": "Nec vero Alciden me sum laetatus euntem",
+        },
+        Object {
+          "line": "10",
+          "text": "accepisse lacu, nec Thesea Pirithoumque,",
+        },
+        Object {
+          "line": "11",
+          "text": "dis quamquam geniti atque invicti viribus essent.”",
+        },
+      ]
+    }
+  />
+</Layout>
+`;
