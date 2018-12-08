@@ -10,30 +10,27 @@ import QuizResults from "./QuizResults";
 
 class Quiz extends Component {
   state = {
+    questionCards: [],
     answers: [],
     currentQuestion: 1,
-    minutes: 20,
+    minutes: "20",
     seconds: "00",
     subjects: ["Latin", "Trigonometry"],
+    subject: "Latin",
+    // testStarted: true,
     testStarted: false,
   };
 
   handleSettings = event => {
-    const target = event.target;
-    const value = target.type === "select" ? target.option : target.value;
-    const name = target.name;
+    const { name, value } = event.target;
     this.setState(() => ({
       [name]: value,
     }));
   };
 
-  // setInterval = (tick, 1000) => {
-
-  // }
-
   tick = () => {
-    // const min = Math.floor(this.seconds / 60);
-    const min = this.minutes;
+    const min = Math.floor(this.secondsRemaining / 60);
+    // const min = this.minutes;
     const sec = this.secondsRemaining - min * 60;
 
     this.setState({
@@ -43,6 +40,7 @@ class Quiz extends Component {
 
     if (sec < 10) {
       this.setState(prevState => ({
+        // seconds: "0" + this.state.seconds,
         seconds: `0${prevState.seconds}`,
       }));
     }
@@ -53,32 +51,33 @@ class Quiz extends Component {
     }
     if (!min && !sec) {
       clearInterval(this.handleInterval);
-      // this.renderResults();
+      this.renderResults();
     }
     this.secondsRemaining -= 1;
   };
 
-  handleInterval = tick => {
-    setInterval(tick, 1000);
-  };
-
   startTest = () => {
-    // this.handleInterval = setInterval(this.tick, 1000);
-    this.handleInterval(this.tick);
+    this.handleInterval = setInterval(this.tick, 1000);
+    // this.handleInterval(this.tick);
     const time = this.state.minutes;
     this.secondsRemaining = time * 60;
     // retrieve corresponding subject from api
     // console.log(minutes);
+    console.log(this.state.subject);
     this.setState(() => ({
       testStarted: true,
     }));
   };
 
-  handleSelect = (questionId, choice) => {
+  handleSelect = (questionId, choice ) => {
+    // console.log(questionId);
+    // console.log(choice);
+    // console.log(this.state.answers);
     this.setState(prevState => ({
       answers: [...prevState.answers, { questionId, choice }],
       currentQuestion: prevState.currentQuestion + 1,
     }));
+    // event.preventDefault();
   };
 
   handleBack() {
@@ -88,13 +87,13 @@ class Quiz extends Component {
   }
 
   renderStartPage = () => {
-    const { minutes, seconds, subjects, testStarted } = this.state;
+    const { minutes, seconds, subjects } = this.state;
     const { handleSettings, startTest } = this;
     return (
       <div>
         <Timer minutes={minutes} seconds={seconds} />
-        <TimerInput handleSettings={handleSettings} minutes={minutes} />
-        <Dropdown handleSettings={handleSettings} choices={subjects} />
+        <TimerInput action={handleSettings} minutes={minutes} />
+        <Dropdown action={handleSettings} choices={subjects} name="subject" />
         <StartButton action={startTest} />
       </div>
     );
@@ -103,13 +102,14 @@ class Quiz extends Component {
   renderQuiz = () => {
     const { questions, passage } = this.props;
     const { minutes, seconds } = this.state;
+    const { handleSelect } = this;
     return (
       <div>
         <Timer minutes={minutes} seconds={seconds} />
         <Passage passage={passage} />
         <div className="cards">
           {questions.map(question => (
-            <QuestionContainer question={question} key={question.id} />
+            <QuestionContainer key={question.id} handleSelect={handleSelect} question={question} />
           ))}
         </div>
       </div>

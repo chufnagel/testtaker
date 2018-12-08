@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 
-const Answer = ({ id, text, onSelect }) => (
+const Answer = ({ questionId, choice, text, onSelect }) => (
   <div
     className="radio-row"
-    onClick={() => onSelect(id)}
-    onKeyPress={() => onSelect(id)}
+    onClick={() => onSelect(questionId, choice)}
+    onKeyPress={() => onSelect(questionId, choice)}
     aria-checked="false"
     role="radio"
     tabIndex="0"
   >
-    <input key={id} name="answer" value={text} type="radio" />
-    {`${id} - `} {`${text}`}
+    <input key={`${questionId}:${choice}`} name="answer" value={text} type="radio" />
+    {`${choice} - `} {`${text}`}
     <br />
   </div>
 );
