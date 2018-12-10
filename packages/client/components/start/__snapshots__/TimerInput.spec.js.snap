@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimerInput TimerInput matches snapshot 1`] = `
+<div
+  className="timer-container"
+  style={
+    Object {
+      "marginLeft": 100,
+    }
+  }
+>
+  <h3>
+    Set a time limit
+  </h3>
+  <input
+    min="0"
+    minutes={20}
+    name="minutes"
+    onChange={[MockFunction]}
+    required={true}
+    type="number"
+    value={20}
+  />
+</div>
+`;

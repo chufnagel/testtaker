@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionAnswerCard QuestionAnswerCard matches snapshot 1`] = `
+<div
+  className="answer-card card"
+>
+  <Question
+    id={1}
+    text="Navita (line 2) refers to"
+  />
+  <p
+    className="incorrect"
+  >
+    You answered 
+    B
+    , but the right answer was 
+    A
+  </p>
+  <Answer
+    checked={true}
+    choice="A"
+    className="radio-row correct"
+    key="A"
+    text="Evander"
+  />
+  <Answer
+    checked={false}
+    choice="B"
+    className="radio-row incorrect"
+    key="B"
+    text="Latinus"
+  />
+  <Answer
+    checked={false}
+    choice="C"
+    className="radio-row"
+    key="C"
+    text="Priam"
+  />
+  <Answer
+    checked={false}
+    choice="D"
+    className="radio-row"
+    key="D"
+    text="Juturna"
+  />
+</div>
+`;

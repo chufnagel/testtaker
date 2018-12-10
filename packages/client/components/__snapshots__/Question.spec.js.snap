@@ -4,6 +4,6 @@ exports[`Question Question matches snapshot 1`] = `
 <h5
   className="question"
 >
-  1 Lorem ipsum
+  1. Lorem ipsum
 </h5>
 `;

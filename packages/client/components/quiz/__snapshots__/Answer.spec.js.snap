@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Answer Answer matches snapshot 1`] = `
+<div
+  aria-checked={false}
+  checked={false}
+  className="radio-row"
+  key="A"
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="radio"
+  tabIndex="0"
+>
+  <input
+    key="1:A"
+    name="answer"
+    type="radio"
+    value="Lorem ipsum"
+  />
+  A - 
+   
+  Lorem ipsum
+  <br />
+</div>
+`;

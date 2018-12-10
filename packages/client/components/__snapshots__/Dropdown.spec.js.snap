@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Dropdown matches snapshot 1`] = `
+<div
+  className="dropdown-container"
+>
+  <select
+    className="dropdown"
+    name="Lorem Ipsum"
+    onChange={[MockFunction]}
+  >
+    <option
+      key="Latin"
+      value="Latin"
+    >
+      Latin
+    </option>
+  </select>
+</div>
+`;

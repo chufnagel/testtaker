@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubmitButton SubmitButton matches snapshot 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 130,
+    }
+  }
+>
+  <Link
+    href={
+      Object {
+        "pathname": "/",
+        "query": Object {},
+      }
+    }
+  >
+    <button
+      onClick={[MockFunction]}
+      type="button"
+    >
+      Submit
+    </button>
+  </Link>
+</div>
+`;

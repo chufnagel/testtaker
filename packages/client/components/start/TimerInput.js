@@ -17,12 +17,12 @@ const TimerInput = ({ action, minutes }) => (
 );
 
 TimerInput.propTypes = {
-  // minutes: PropTypes.number,
+  minutes: PropTypes.number,
   action: PropTypes.func.isRequired,
 };
 
-// TimerInput.defaultProps = {
-//   minutes: 20,
-// };
+TimerInput.defaultProps = {
+  minutes: 20,
+};
 
 export default TimerInput;

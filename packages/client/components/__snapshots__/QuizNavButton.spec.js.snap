@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuizNavButton QuizNavButton matches snapshot 1`] = `
+<button
+  className="quizNavButton Next"
+  direction="Next"
+  disabled={true}
+  type="button"
+>
+  Next
+</button>
+`;

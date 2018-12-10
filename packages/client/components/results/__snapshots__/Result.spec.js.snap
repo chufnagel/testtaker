@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result Result matches snapshot 1`] = `
+<div>
+  <h1>
+    Results
+  </h1>
+  <ProgressBar
+    percentage={75}
+  />
+  <p>
+    15
+     out of 
+    20
+     correct
+  </p>
+  <ProgressBar
+    percentage={100}
+  />
+  <p>
+    15
+     out of 
+    15
+     used
+  </p>
+  <Passage
+    passage={
+      Array [
+        Object {
+          "line": "1",
+          "text": "Ergo iter inceptum peragunt fluvioque propinquant.",
+        },
+      ]
+    }
+  />
+  <QuestionAnswerCard
+    answers={
+      Array [
+        Object {
+          "choice": "A",
+          "content": "Evander",
+        },
+        Object {
+          "choice": "B",
+          "content": "Latinus",
+        },
+        Object {
+          "choice": "C",
+          "content": "Priam",
+        },
+        Object {
+          "choice": "D",
+          "content": "Juturna",
+        },
+      ]
+    }
+    correct="A"
+    id={1}
+    key="1"
+    text="Navita (line 2) refers to"
+    userAnswer="B"
+  />
+</div>
+`;

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuizContainer QuizContainer matches snapshot 1`] = `
+<div>
+  <Timer
+    minutes={20}
+    seconds="00"
+  />
+  <Passage
+    passage={
+      Array [
+        Object {
+          "line": "1",
+          "text": "Ergo iter inceptum peragunt fluvioque propinquant.",
+        },
+      ]
+    }
+  />
+  <div
+    className="cards"
+  >
+    <QuestionContainer
+      handleSelect={[Function]}
+      key="1"
+      question={
+        Object {
+          "answers": Array [
+            Object {
+              "choice": "A",
+              "content": "Evander",
+            },
+            Object {
+              "choice": "B",
+              "content": "Latinus",
+            },
+            Object {
+              "choice": "C",
+              "content": "Priam",
+            },
+            Object {
+              "choice": "D",
+              "content": "Juturna",
+            },
+          ],
+          "id": 1,
+          "text": "Navita (line 2) refers to",
+        }
+      }
+    />
+  </div>
+  <SubmitButton
+    action={[Function]}
+    path="/results"
+    query={
+      Object {
+        "answers": Object {},
+        "questions": Array [
+          Object {
+            "answers": Array [
+              Object {
+                "choice": "A",
+                "content": "Evander",
+              },
+              Object {
+                "choice": "B",
+                "content": "Latinus",
+              },
+              Object {
+                "choice": "C",
+                "content": "Priam",
+              },
+              Object {
+                "choice": "D",
+                "content": "Juturna",
+              },
+            ],
+            "id": 1,
+            "text": "Navita (line 2) refers to",
+          },
+        ],
+        "subject": "Test",
+      }
+    }
+    text="Submit"
+  />
+</div>
+`;

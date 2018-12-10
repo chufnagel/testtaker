@@ -13,11 +13,14 @@ const Dropdown = ({ action, choices, name }) => (
 );
 
 Dropdown.propTypes = {
-  choices: PropTypes.array,
+  action: PropTypes.func.isRequired,
+  choices: PropTypes.arrayOf(PropTypes.string),
+  name: PropTypes.string,
 };
 
 Dropdown.defaultProps = {
   choices: ["Latin"],
+  name: "Lorem Ipsum",
 };
 
 export default Dropdown;

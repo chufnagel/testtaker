@@ -18,9 +18,18 @@ const Layout = props => (
         text-decoration: none;
         padding: 1em;
       }
+      .passage-container {
+        clear: both;
+        top: 0;
+        position: sticky;
+      }
       .passage {
         text-align: left;
         display: flex;
+      }
+      .spacer {
+        width: 100%;
+        height: 95px;
       }
       .header {
         display: block;
@@ -71,6 +80,25 @@ const Layout = props => (
       .question {
       }
       radio {
+      }
+      .progress-bar {
+        position: relative;
+        height: 20px;
+        width: 350px;
+        border-radius: 50px;
+        border: 1px solid #333;
+      }
+      .progress {
+        background: #1da598;
+        height: 100%;
+        border-radius: inherit;
+        transition: width 0.2s ease-in;
+      }
+      .correct {
+        color: green;
+      }
+      .incorrect {
+        color: red;
       }
     `}</style>
     <Header />

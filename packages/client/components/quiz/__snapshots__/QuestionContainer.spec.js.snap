@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionContainer QuestionContainer matches snapshot 1`] = `
+<div
+  className="card"
+>
+  <Question
+    id={1}
+    text="Lorem ipsum"
+  />
+  <form>
+    <Answer
+      checked={true}
+      choice="A"
+      key="A"
+      onSelect={[MockFunction]}
+      questionId={1}
+      text="Lorem ipsum"
+    />
+  </form>
+</div>
+`;
