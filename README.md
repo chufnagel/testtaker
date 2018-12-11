@@ -21,4 +21,4 @@ Server
 
 Tools
 [![Known Vulnerabilities](https://snyk.io/test/github/chufnagel/testtaker/badge.svg)?targetFile=packages/tools/package.json](https://snyk.io/test/github/chufnagel/testtaker)
-[![Dependency Status](https://david-dm.org/chufnagel/testtaker?path=packages/tools)](https://david-dm.org/chufnagel/testtaker.svg)
+[![Dependency Status](https://david-dm.org/chufnagel/testtaker?path=packages/tools)](https://david-dm.org/chufnagel/testtaker.svg) [![Greenkeeper badge](https://badges.greenkeeper.io/chufnagel/testtaker.svg)](https://greenkeeper.io/)
