@@ -4,6 +4,8 @@
   "description": "",
   "main": "pages/index.js",
   "dependencies": {
+    "antd": "^3.11.0",
+    "axios": "^0.18.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.2",
     "prop-types": "^15.6.2",
@@ -19,13 +21,13 @@
     "enzyme": "^3.7.0",
     "enzyme-to-json": "^3.3.4",
     "jest": "^23.6.0",
+    "server": "1.0.0",
     "tools": "1.0.0"
   },
   "scripts": {
     "start": "cross-env next start -p $PORT",
     "dev": "cross-env next",
-    "test": "jest",
-    "build": "next build"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

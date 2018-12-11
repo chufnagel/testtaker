@@ -17,7 +17,8 @@ const TimerInput = ({ action, minutes }) => (
 );
 
 TimerInput.propTypes = {
-  minutes: PropTypes.number,
+  // minutes: PropTypes.number,
+  minutes: PropTypes.node,
   action: PropTypes.func.isRequired,
 };
 
