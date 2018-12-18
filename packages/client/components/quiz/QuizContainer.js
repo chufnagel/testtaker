@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import Passage from "../Passage";
@@ -7,7 +7,7 @@ import QuestionContainer from "./QuestionContainer";
 import Timer from "../Timer";
 import SubmitButton from "../SubmitButton";
 
-class QuizContainer extends Component {
+class QuizContainer extends PureComponent {
   state = {
     questions: [],
     answers: {},

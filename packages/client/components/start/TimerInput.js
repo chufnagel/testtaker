@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 
-const TimerInput = ({ action, minutes }) => (
+const TimerInput = memo(({ action, minutes }) => (
   <div className="timer-container" style={{ marginLeft: 100 }}>
     <h3>Set a time limit</h3>
     <input
@@ -14,7 +14,7 @@ const TimerInput = ({ action, minutes }) => (
       required
     />
   </div>
-);
+));
 
 TimerInput.propTypes = {
   // minutes: PropTypes.number,

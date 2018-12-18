@@ -1,6 +1,7 @@
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 
-const Answer = ({ questionId, choice, text, onSelect, key, checked }) => (
+const Answer = memo(({ questionId, choice, text, onSelect, key, checked }) => (
   <div
     className="radio-row"
     key={key}
@@ -15,7 +16,7 @@ const Answer = ({ questionId, choice, text, onSelect, key, checked }) => (
     {`${choice} - `} {`${text}`}
     <br />
   </div>
-);
+));
 
 Answer.propTypes = {
   questionId: PropTypes.number,

@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 import Question from "../Question";
 
@@ -15,7 +16,7 @@ const getClassName = (correct, choice, userAnswer) => {
   return className;
 };
 
-const QuestionAnswerCard = ({ id, text, correct, userAnswer, answers }) => {
+const QuestionAnswerCard = memo(({ id, text, correct, userAnswer, answers }) => {
   return (
     <div className="answer-card card">
       <Question id={id} text={text} />
@@ -38,7 +39,7 @@ const QuestionAnswerCard = ({ id, text, correct, userAnswer, answers }) => {
       ))}
     </div>
   );
-};
+});
 
 QuestionAnswerCard.propTypes = {
   id: PropTypes.number,

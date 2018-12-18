@@ -1,6 +1,7 @@
+import React, { memo } from "react";
 import Link from "next/link";
 
-const Header = () => (
+const Header = memo(() => (
   <div className="header">
     <Link href="/">
       <a className="nav start">Home</a>
@@ -12,6 +13,6 @@ const Header = () => (
       <a className="nav results">Results</a>
     </Link>
   </div>
-);
+));
 
 export default Header;

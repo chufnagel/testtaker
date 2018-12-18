@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
 import Timer from "../Timer";
 import TimerInput from "./TimerInput";
 import SubmitButton from "../SubmitButton";
 import Dropdown from "../Dropdown";
 
-class Start extends Component {
+class Start extends PureComponent {
   state = {
     minutes: "20",
     seconds: "00",

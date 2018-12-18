@@ -1,6 +1,7 @@
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 
-const Passage = ({ passage }) => (
+const Passage = memo(({ passage }) => (
   // <div className="spacer">
   <div className="passage-container">
     {passage.map(entry => (
@@ -10,7 +11,7 @@ const Passage = ({ passage }) => (
     ))}
   </div>
   // </div>
-);
+));
 
 Passage.propTypes = {
   passage: PropTypes.array,

@@ -1,9 +1,10 @@
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 
 import Answer from "./Answer";
 import Question from "../Question";
 
-const QuestionContainer = ({ question, handleSelect }) => (
+const QuestionContainer = memo(({ question, handleSelect }) => (
   <div className="card">
     <Question id={question.id} text={question.text} />
     <form>
@@ -19,7 +20,7 @@ const QuestionContainer = ({ question, handleSelect }) => (
       ))}
     </form>
   </div>
-);
+));
 
 QuestionContainer.propTypes = {
   question: PropTypes.shape({

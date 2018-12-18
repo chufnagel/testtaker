@@ -1,36 +1,39 @@
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 
 import Passage from "../Passage";
 import ProgressBar from "../ProgressBar";
 import QuestionAnswerCard from "./QuestionAnswerCard";
 
-const Result = ({ passage, questions, totalCorrect, totalQuestions, elapsedTime, totalTime }) => {
-  const correct = (totalCorrect / totalQuestions) * 100;
-  const elapsed = (elapsedTime / totalTime) * 100;
-  let renderPassage;
-  if (passage) {
-    renderPassage = <Passage passage={passage} />;
-  } else {
-    renderPassage = <div />;
-  }
-  return (
-    <div>
-      <h1>Results</h1>
-      <ProgressBar percentage={correct} />
-      <p>
-        {totalCorrect} out of {totalQuestions} correct
-      </p>
-      <ProgressBar percentage={elapsed} />
-      <p>
-        {elapsedTime} out of {totalTime} used
-      </p>
-      {renderPassage}
-      {questions.map(question => (
-        <QuestionAnswerCard key={question.id} {...question} />
-      ))}
-    </div>
-  );
-};
+const Result = memo(
+  ({ passage, questions, totalCorrect, totalQuestions, elapsedTime, totalTime }) => {
+    const correct = (totalCorrect / totalQuestions) * 100;
+    const elapsed = (elapsedTime / totalTime) * 100;
+    let renderPassage;
+    if (passage) {
+      renderPassage = <Passage passage={passage} />;
+    } else {
+      renderPassage = <div />;
+    }
+    return (
+      <div>
+        <h1>Results</h1>
+        <ProgressBar percentage={correct} />
+        <p>
+          {totalCorrect} out of {totalQuestions} correct
+        </p>
+        <ProgressBar percentage={elapsed} />
+        <p>
+          {elapsedTime} out of {totalTime} used
+        </p>
+        {renderPassage}
+        {questions.map(question => (
+          <QuestionAnswerCard key={question.id} {...question} />
+        ))}
+      </div>
+    );
+  },
+);
 
 Result.propTypes = {
   // questions: PropTypes.arrayOf(PropTypes.object).isRequired,

@@ -1,6 +1,7 @@
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 
-const Dropdown = ({ action, choices, name }) => (
+const Dropdown = memo(({ action, choices, name }) => (
   <div className="dropdown-container">
     <select onChange={action} name={name} className="dropdown">
       {choices.map((choice, idx) => (
@@ -10,7 +11,7 @@ const Dropdown = ({ action, choices, name }) => (
       ))}
     </select>
   </div>
-);
+));
 
 Dropdown.propTypes = {
   action: PropTypes.func.isRequired,
