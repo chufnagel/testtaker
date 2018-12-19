@@ -1,7 +1,12 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
+import { Container } from "semantic-ui-react";
 
-const Question = memo(({ id, text }) => <h5 className="question">{`${id}. ${text}`}</h5>);
+const Question = memo(({ id, text }) => (
+  <Container textAlign="left">
+    <p>{`${id}. ${text}`}</p>
+  </Container>
+));
 
 Question.propTypes = {
   id: PropTypes.number,

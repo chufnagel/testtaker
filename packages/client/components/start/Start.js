@@ -1,5 +1,7 @@
 import React, { PureComponent } from "react";
 
+import { Card, Divider, Grid, Step } from "semantic-ui-react";
+
 import Timer from "../Timer";
 import TimerInput from "./TimerInput";
 import SubmitButton from "../SubmitButton";
@@ -41,10 +43,41 @@ class Start extends PureComponent {
     return (
       <div>
         <Timer minutes={minutes} seconds={seconds} />
-        <TimerInput action={handleSettings} minutes={minutes} />
-        <Dropdown action={handleSettings} choices={subjects} name="subject" />
-        <SubmitButton path="/quiz" query={{ subject, minutes }} action={startTest} text="Start" />
-      </div>
+        <Card>
+          <Grid columns={1}>
+            <Grid.Column>
+              <Step.Group vertical>
+                <Step>
+                  <Step.Content>
+                    <Step.Title>Time</Step.Title>
+                    <Step.Description>Set a time limit</Step.Description>
+                    <TimerInput action={handleSettings} minutes={minutes} />
+                  </Step.Content>
+                </Step>
+                <Step>
+                  <Step.Content>
+                    <Step.Title>Subject</Step.Title>
+                    <Step.Description>Choose a subject</Step.Description>
+                    <Dropdown action={handleSettings} choices={subjects} name="subject" />
+                  </Step.Content>
+                </Step>
+                <Step>
+                  <Step.Content>
+                    <Step.Title>Start</Step.Title>
+                    <Step.Description>Press start to begin your test!</Step.Description>
+                    <SubmitButton
+                      path="/quiz"
+                      query={{ subject, minutes }}
+                      action={startTest}
+                      text="Start"
+                    />
+                  </Step.Content>
+                </Step>
+              </Step.Group>
+            </Grid.Column>
+        </Grid>
+      </Card>
+    </div>
     );
   }
 }

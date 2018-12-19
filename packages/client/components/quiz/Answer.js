@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
+import { Form } from "semantic-ui-react";
 
 const Answer = memo(({ questionId, choice, text, onSelect, key, checked }) => (
   <div
@@ -12,6 +13,7 @@ const Answer = memo(({ questionId, choice, text, onSelect, key, checked }) => (
     role="radio"
     tabIndex="0"
   >
+    <Form.Radio label={text} value={choice} onChange={this.onSelect} />
     <input key={`${questionId}:${choice}`} name="answer" value={text} type="radio" />
     {`${choice} - `} {`${text}`}
     <br />

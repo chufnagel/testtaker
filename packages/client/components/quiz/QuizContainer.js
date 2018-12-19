@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
+import { Card } from "semantic-ui-react";
 
 import Passage from "../Passage";
 import QuestionContainer from "./QuestionContainer";
@@ -100,11 +101,11 @@ class QuizContainer extends PureComponent {
         <Timer minutes={minutes} seconds={seconds} />
         {passage ? <Passage passage={passage} /> : <div />}
         {/* <Passage passage={passage} /> */}
-        <div className="cards">
+        <Card.Group itemsPerRow={2}>
           {questions.map(question => (
             <QuestionContainer key={question.id} handleSelect={handleSelect} question={question} />
           ))}
-        </div>
+        </Card.Group>
         <SubmitButton
           path="/results"
           query={{ subject, questions, answers }}

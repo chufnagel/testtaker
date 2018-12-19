@@ -1,11 +1,13 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
 
+import { Card } from "semantic-ui-react";
+
 import Answer from "./Answer";
 import Question from "../Question";
 
 const QuestionContainer = memo(({ question, handleSelect }) => (
-  <div className="card">
+  <Card>
     <Question id={question.id} text={question.text} />
     <form>
       {question.answers.map(answer => (
@@ -19,7 +21,7 @@ const QuestionContainer = memo(({ question, handleSelect }) => (
         />
       ))}
     </form>
-  </div>
+  </Card>
 ));
 
 QuestionContainer.propTypes = {

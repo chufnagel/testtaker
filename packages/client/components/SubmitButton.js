@@ -1,15 +1,12 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
 import React, { memo } from "react";
+import { Button } from "semantic-ui-react";
 
 const SubmitButton = memo(({ path, query, action, text }) => (
-  <div style={{ marginLeft: 130 }}>
-    <Link href={{ pathname: path, query }}>
-      <button onClick={action} type="button">
-        {text}
-      </button>
-    </Link>
-  </div>
+  <Button primary onClick={action} type="button">
+    <Link href={{ pathname: path, query }}>{text}</Link>
+  </Button>
 ));
 
 SubmitButton.propTypes = {

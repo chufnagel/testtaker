@@ -1,14 +1,19 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
+import { Input } from "semantic-ui-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 const TimerInput = memo(({ action, minutes }) => (
-  <div className="timer-container" style={{ marginLeft: 100 }}>
-    <h3>Set a time limit</h3>
-    <input
+  <div className="time-cop">
+    <Input
+      icon={<FontAwesomeIcon icon="clock" />}
+      iconPosition="left"
+      placeholder="Minutes"
       min="0"
       minutes={minutes}
       name="minutes"
-      type="number"
+      // type="number"
       onChange={action}
       value={minutes}
       required

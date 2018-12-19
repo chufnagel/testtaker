@@ -100,6 +100,15 @@ const Layout = props => (
       .incorrect {
         color: red;
       }
+      .title {
+        font-size: 1.5em;
+      }
+      .description {
+        padding: 5px;
+      }
+      .step {
+        padding: 10px;
+      }
     `}</style>
     <Header />
     {props.children}

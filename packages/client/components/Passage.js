@@ -1,15 +1,16 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
+import { Container } from "semantic-ui-react";
 
 const Passage = memo(({ passage }) => (
   // <div className="spacer">
-  <div className="passage-container">
+  <Container>
     {passage.map(entry => (
       <p className="passage" key={entry.line}>
         {`${entry.line}: ${entry.text}`}
       </p>
     ))}
-  </div>
+  </Container>
   // </div>
 ));
 
