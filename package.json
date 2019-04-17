@@ -7,7 +7,7 @@
   ],
   "devDependencies": {
     "husky": "^1.2.0",
-    "lerna": "^3.4.3"
+    "lerna": "^3.13.3"
   },
   "main": "index.js",
   "author": "Charles Hufnagel <charles.hufnagel@pm.me>",
