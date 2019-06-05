@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "husky": "^1.2.0",
+    "husky": "^2.4.0",
     "lerna": "^3.4.3"
   },
   "main": "index.js",
