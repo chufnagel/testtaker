@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "client": "1.0.0",
-    "server": "1.0.18",
+    "server": "1.0.25",
     "tools": "1.0.0"
   }
 }
