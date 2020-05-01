@@ -9,10 +9,14 @@
     "express": "^4.16.4",
     "morgan": "^1.9.1",
     "next": "^7.0.2",
-    "nodemon": "^1.18.8"
+    "nodemon": "^1.18.8",
+    "snyk": "^1.316.2"
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
-  }
+    "dev": "nodemon index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
